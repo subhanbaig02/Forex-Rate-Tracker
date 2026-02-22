@@ -1,0 +1,22 @@
+{
+  "name": "forex-converter-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Forex Currency Converter",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": ["forex", "currency", "converter", "express", "postgresql"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "pg": "^8.11.0",
+    "axios": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

@@ -1,0 +1,89 @@
+/* Result Display Styles */
+.result-display {
+  margin-bottom: 30px;
+  animation: slideIn 0.4s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.result-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 25px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+/* Main conversion result */
+.result-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.result-amount,
+.result-converted {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.result-equals {
+  font-size: 1.3rem;
+  opacity: 0.8;
+}
+
+/* Exchange rate info */
+.result-rate {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.rate-label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.rate-value {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Timestamp */
+.result-timestamp {
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .result-main {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .result-amount,
+  .result-converted {
+    font-size: 1.2rem;
+  }
+}

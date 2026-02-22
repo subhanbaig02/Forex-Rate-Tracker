@@ -1,0 +1,108 @@
+/* History Table Styles */
+.history-section {
+  margin-top: 40px;
+}
+
+.history-section h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* No history message */
+.no-history {
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+  font-size: 1rem;
+}
+
+/* Table container for horizontal scroll on mobile */
+.table-container {
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styles */
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.history-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.history-table th {
+  padding: 15px 10px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.history-table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.history-table tbody tr:hover {
+  background-color: #f8f8ff;
+}
+
+.history-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.history-table td {
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Specific column styles */
+.date-cell {
+  color: #666;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.currency-cell {
+  font-weight: 600;
+  color: #667eea;
+  text-align: center;
+}
+
+.amount-cell,
+.result-cell {
+  text-align: right;
+  font-weight: 500;
+}
+
+.rate-cell {
+  text-align: right;
+  color: #666;
+  font-family: 'Courier New', monospace;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .history-table {
+    font-size: 0.85rem;
+  }
+
+  .history-table th,
+  .history-table td {
+    padding: 10px 8px;
+  }
+
+  .history-section h2 {
+    font-size: 1.2rem;
+  }
+}
